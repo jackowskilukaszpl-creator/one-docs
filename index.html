@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ONE – dokumentacja systemu zarządzania produktami i integracji e-commerce.">
+  <title>ONE | Dokumentacja</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f7f7f8;color:#1b1b1b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}header{background:#171717;color:#fff;padding:35px 8%}header strong{font-size:32px;letter-spacing:2px}header p{color:#ccc;margin:4px 0}main{max-width:900px;margin:40px auto;padding:0 20px}section{background:white;border:1px solid #e6e6e6;border-radius:12px;padding:28px;margin-bottom:18px}h1{font-size:30px}h2{font-size:21px;margin-top:0}footer{text-align:center;color:#777;padding:20px}a{color:#1756a9}
+  </style>
+</head>
+<body>
+<header><strong>ONE.</strong><p>Dokumentacja platformy e-commerce</p></header>
+<main>
+  <h1>ONE – dokumentacja systemu</h1>
+  <section><h2>O systemie</h2><p>ONE to rozwijana aplikacja do zarządzania katalogiem produktów, przyjęciami towaru oraz integracjami z kanałami sprzedaży. System pomaga przygotowywać kompletne karty produktów na podstawie kodów EAN, plików dostawców i zweryfikowanych źródeł informacji.</p></section>
+  <section><h2>Funkcjonalności</h2><ul><li>Skanowanie kodów EAN i import plików XLSX/CSV.</li><li>Mapowanie pól, kategorii oraz wariantów produktów.</li><li>Wyszukiwanie danych produktowych i przygotowywanie opisów z pomocą AI.</li><li>Obsługa kartotek producentów i podmiotów odpowiedzialnych GPSR.</li><li>Przygotowywanie produktów do eksportu do zewnętrznych systemów.</li></ul><p>Część funkcjonalności jest obecnie rozwijana i testowana.</p></section>
+  <section><h2>Integracja Allegro</h2><p>ONE przygotowuje integrację z oficjalnym Allegro REST API. Połączenie konta użytkownika będzie odbywać się przez OAuth 2.0 i oficjalny ekran autoryzacji Allegro, bez przekazywania hasła do konta.</p><p>Początkowy zakres obejmuje odczyt dostępnych danych o produktach oraz obsługę kartotek producentów i podmiotów odpowiedzialnych GPSR. Operacje modyfikujące dane na Allegro będą wymagały osobnej implementacji i zatwierdzenia przez użytkownika.</p><p>Na tym etapie ONE nie potrzebuje dostępu do zamówień, danych kupujących, wiadomości ani płatności.</p></section>
+  <section><h2>Bezpieczeństwo</h2><p>Każda firma ma korzystać z własnych połączeń i danych. Klucze i tokeny integracji nie są publikowane w dokumentacji. Zakres uprawnień powinien być ograniczony do funkcji wymaganych przez użytkownika. Autoryzację konta Allegro można odwołać w ustawieniach platformy Allegro.</p></section>
+  <section><h2>Status</h2><p>ONE jest projektem w trakcie rozwoju. Dokumentacja będzie aktualizowana wraz z wdrażaniem kolejnych funkcji i integracji.</p></section>
+</main>
+<footer>ONE · Dokumentacja aplikacji</footer>
+</body>
+</html>
